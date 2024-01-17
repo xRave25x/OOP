@@ -13,9 +13,8 @@ const DomElement = function(selector,height,width,bg,fontSize, position) {
 
 };
 
-const listeners = () => {
     document.addEventListener('DOMContentLoaded', DomElement);
-}
+
 
 DomElement.prototype.creator = function(){
     
@@ -45,5 +44,5 @@ const newElement = new DomElement ('.', '100px', '100px', 'red', '20px', 'absolu
 
 
 newElement.creator();
-listeners ();
+
 
